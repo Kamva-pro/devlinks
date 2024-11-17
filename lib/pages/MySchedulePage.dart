@@ -16,7 +16,7 @@ import '../styles/Styles.dart';
 class MySchedulePage extends StatefulWidget {
   static const ROUTE = "myschedule";
 
-  const MySchedulePage({Key? key}) : super(key: key);
+  const MySchedulePage({super.key});
 
   @override
   _MySchedulePageState createState() => _MySchedulePageState();

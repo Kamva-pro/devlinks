@@ -53,9 +53,7 @@ class UserManagementHelper{
     if(toBeCreated.isNotEmpty) {
       var really = await DialogHelper.showConfirmationDialogAsync(context,
           "Creating users".tr(),
-          "New users found. Do you want to create them?".tr() +
-          "\n" +
-          "${"Users".tr()} (${toBeCreated.length}):\n${toBeCreated.map((value) => value[Tb.occasion_users.data_email]).toList().join(",\n")}",
+          "${"New users found. Do you want to create them?".tr()}\n${"Users".tr()} (${toBeCreated.length}):\n${toBeCreated.map((value) => value[Tb.occasion_users.data_email]).toList().join(",\n")}",
           confirmButtonMessage: "Proceed".tr());
 
       if(really) {
@@ -69,9 +67,7 @@ class UserManagementHelper{
     if(toBeUpdated.isNotEmpty) {
       var really = await DialogHelper.showConfirmationDialogAsync(context,
           "Updating users".tr(),
-          "These users have some changes. Do you want to update them?".tr() +
-          "\n" +
-          "${"Users".tr()} (${toBeUpdated.length}):\n${toBeUpdated.map((value) => value[Tb.occasion_users.data_email]).toList().join(",\n")}",
+          "${"These users have some changes. Do you want to update them?".tr()}\n${"Users".tr()} (${toBeUpdated.length}):\n${toBeUpdated.map((value) => value[Tb.occasion_users.data_email]).toList().join(",\n")}",
           confirmButtonMessage: "Proceed".tr());
 
       if(really) {
@@ -98,9 +94,7 @@ class UserManagementHelper{
     if(toBeDeleted.isNotEmpty) {
       var reallyDelete = await DialogHelper.showConfirmationDialogAsync(context,
           "Removing users",
-          "These users have been removed, but they still exist in the application. Do you want to remove them?".tr() +
-              "\n" +
-              "${"Users".tr()} (${toBeDeleted.length}):\n${toBeDeleted.map((value) => value.toBasicString()).toList().join(",\n")}",
+          "${"These users have been removed, but they still exist in the application. Do you want to remove them?".tr()}\n${"Users".tr()} (${toBeDeleted.length}):\n${toBeDeleted.map((value) => value.toBasicString()).toList().join(",\n")}",
           confirmButtonMessage: "Proceed".tr());
 
       if(reallyDelete) {

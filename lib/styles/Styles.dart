@@ -85,7 +85,7 @@ class SvgIconButton extends StatelessWidget {
   final double iconSize;
 
 
-  const SvgIconButton({
+  const SvgIconButton({super.key, 
     required this.onPressed,
     required this.iconPath,
     this.splashRadius = 32,

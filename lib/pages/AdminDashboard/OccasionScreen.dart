@@ -11,7 +11,7 @@ import 'package:fstapp/services/ResponsiveService.dart';
 class OccasionsScreen extends StatefulWidget {
   final int organizationId;
 
-  OccasionsScreen({required this.organizationId});
+  const OccasionsScreen({super.key, required this.organizationId});
 
   @override
   _OccasionsScreenState createState() => _OccasionsScreenState();
@@ -104,7 +104,7 @@ class OccasionCard extends StatelessWidget {
   final VoidCallback onEdit;
   final VoidCallback onAdmin;
 
-  OccasionCard({
+  const OccasionCard({super.key, 
     required this.occasion,
     required this.onView,
     required this.onEdit,

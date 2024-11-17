@@ -1,6 +1,5 @@
 import 'package:fstapp/AppRouter.dart';
 import 'package:fstapp/RouterService.dart';
-import 'package:fstapp/appConfig.dart';
 import 'package:fstapp/dataServices/OfflineDataService.dart';
 import 'package:fstapp/dataModels/OccasionUserModel.dart';
 import 'package:fstapp/dataServices/SynchroService.dart';

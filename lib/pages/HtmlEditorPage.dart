@@ -43,7 +43,7 @@ class _HtmlEditorPageState extends State<HtmlEditorPage> {
     }
 
     controller = QuillEditorController();
-    var firstLoad = (t) async {
+    firstLoad(t) async {
       if (_isContentLoading) {
         _isTextSet = true;
       }
@@ -52,7 +52,7 @@ class _HtmlEditorPageState extends State<HtmlEditorPage> {
       }
       await setHtmlText(_originalHtml ?? _html);
       _isTextSet = true;
-    };
+    }
     controller.onTextChanged(firstLoad);
     if (_originalHtml == null) {
       _loadHtmlContent();

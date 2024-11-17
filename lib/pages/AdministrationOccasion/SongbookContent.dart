@@ -8,7 +8,7 @@ import 'package:fstapp/dataServices/DbInformation.dart';
 import 'package:pluto_grid_plus/pluto_grid_plus.dart';
 
 class SongbookContent extends StatelessWidget {
-  const SongbookContent({Key? key}) : super(key: key);
+  const SongbookContent({super.key});
 
   @override
   Widget build(BuildContext context) {

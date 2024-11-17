@@ -14,7 +14,7 @@ import 'package:fstapp/dataServices/SynchroService.dart';
 import 'package:pluto_grid_plus/pluto_grid_plus.dart';
 
 class PlacesTab extends StatefulWidget {
-  const PlacesTab({Key? key}) : super(key: key);
+  const PlacesTab({super.key});
 
   @override
   _PlacesTabState createState() => _PlacesTabState();

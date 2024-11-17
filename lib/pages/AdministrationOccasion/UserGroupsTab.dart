@@ -16,7 +16,7 @@ import 'package:fstapp/services/DialogHelper.dart';
 import 'package:pluto_grid_plus/pluto_grid_plus.dart';
 
 class UserGroupsTab extends StatefulWidget {
-  const UserGroupsTab({Key? key}) : super(key: key);
+  const UserGroupsTab({super.key});
 
   @override
   _UserGroupsTabState createState() => _UserGroupsTabState();

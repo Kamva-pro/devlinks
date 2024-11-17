@@ -6,12 +6,12 @@ class CustomThreeStateCheckbox extends StatelessWidget {
   final void Function(String) onStateChanged;
   final bool isEnabled;
 
-  CustomThreeStateCheckbox({
-    Key? key,
+  const CustomThreeStateCheckbox({
+    super.key,
     required this.currentState,
     required this.onStateChanged,
     this.isEnabled = true,
-  }) : super(key: key);
+  });
 
   // Define colors for each state
   Color _getBackgroundColor(String state) {

@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fstapp/RouterService.dart';
 import 'package:fstapp/dataModels/LanguageModel.dart';
-import 'package:fstapp/dataServices/SynchroService.dart';
 import 'package:fstapp/services/DialogHelper.dart';
 import 'package:fstapp/services/NotificationHelper.dart';
 import 'package:fstapp/appConfig.dart';

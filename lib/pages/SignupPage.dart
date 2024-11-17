@@ -1,5 +1,4 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:fstapp/RouterService.dart';
 import 'package:fstapp/dataServices/AuthService.dart';
 import 'package:easy_localization/easy_localization.dart';

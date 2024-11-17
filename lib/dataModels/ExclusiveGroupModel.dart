@@ -1,6 +1,5 @@
 import 'package:fstapp/components/dataGrid/PlutoAbstract.dart';
 import 'package:fstapp/dataServices/DbEvents.dart';
-import 'package:fstapp/dataServices/DbGroups.dart';
 import 'package:pluto_grid_plus/pluto_grid_plus.dart';
 
 class ExclusiveGroupModel extends IPlutoRowModel {

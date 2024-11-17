@@ -37,11 +37,7 @@ class DbGroups {
 
     if(type == InformationModel.gameType) {
       var gameDef = await DbInformation.getAllInformationForDataGrid(InformationModel.gameType);
-      Map<int, String> dict = Map.fromIterable(
-        gameDef,
-        key: (item) => item.id!,       // Set the key as the "id"
-        value: (item) => item.title!,   // Set the value as the "title"
-      );
+      Map<int, String> dict = { for (var item in gameDef) item.id! : item.title! };
       for(var u in toReturn){
         u.checkpointTitlesDict = dict;
       }

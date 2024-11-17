@@ -51,16 +51,16 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: SongRoute.page, path: "/:{$LINK}/${SongPage.ROUTE}"),
 
     AutoRoute(page: HomeRoute.page, path: "/:{$LINK}", children: [
-      AutoRoute(page: UserRoute.page, path: "${UserPage.ROUTE}"),
+      AutoRoute(page: UserRoute.page, path: UserPage.ROUTE),
       AutoRoute(page: ScheduleNavigationRoute.page, path: EventPage.ROUTE, children: [
                   AutoRoute(page: ScheduleRoute.page, path: "", initial: true),
                   AutoRoute(page: EventRoute.page, path: ":id")
                   ]),
-      AutoRoute(page: NewsRoute.page, path: "${NewsPage.ROUTE}"),
-      AutoRoute(page: MapRoute.page, path: "${MapPage.ROUTE}", maintainState: false, children: [
+      AutoRoute(page: NewsRoute.page, path: NewsPage.ROUTE),
+      AutoRoute(page: MapRoute.page, path: MapPage.ROUTE, maintainState: false, children: [
         AutoRoute(path: ':id', page: MapRoute.page,),
       ]),
-      AutoRoute(page: InfoRoute.page, path: "${InfoPage.ROUTE}", children: [
+      AutoRoute(page: InfoRoute.page, path: InfoPage.ROUTE, children: [
         AutoRoute(
           path: ':id',
           page: InfoRoute.page,

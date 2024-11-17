@@ -15,7 +15,7 @@ import 'package:fstapp/services/ToastHelper.dart';
 import 'package:fstapp/services/UserManagementHelper.dart';
 
 class UsersTab extends StatefulWidget {
-  const UsersTab({Key? key}) : super(key: key);
+  const UsersTab({super.key});
 
   @override
   _UsersTabState createState() => _UsersTabState();
@@ -92,7 +92,9 @@ class _UsersTabState extends State<UsersTab> {
   Future<void> _setPassword(SingleTableDataGrid dataGrid) async {
     var users = _getCheckedUsers(dataGrid);
     if (users.isEmpty) return;
-    for (var u in users) await UserManagementHelper.unsafeChangeUserPassword(context, u);
+    for (var u in users) {
+      await UserManagementHelper.unsafeChangeUserPassword(context, u);
+    }
     ToastHelper.Show(context, "Password has been changed.".tr());
   }
 

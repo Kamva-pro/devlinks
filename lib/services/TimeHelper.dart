@@ -1,7 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:fstapp/appConfig.dart';
-import 'package:intl/intl.dart';
 
 class TimeHelper {
   static DateTime? currentTime;

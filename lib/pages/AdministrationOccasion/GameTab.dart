@@ -6,7 +6,7 @@ import 'package:fstapp/pages/AdministrationOccasion/GameUserGroupsContent.dart';
 import 'package:fstapp/themeConfig.dart';
 
 class GameTab extends StatefulWidget {
-  const GameTab({Key? key}) : super(key: key);
+  const GameTab({super.key});
 
   @override
   _GameTabState createState() => _GameTabState();

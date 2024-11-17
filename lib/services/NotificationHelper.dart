@@ -3,7 +3,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:fstapp/dataServices/AuthService.dart';
-import 'package:fstapp/dataServices/SynchroService.dart';
 import 'package:fstapp/pages/NewsPage.dart';
 import 'package:fstapp/RouterService.dart';
 import 'package:fstapp/services/DialogHelper.dart';

@@ -30,8 +30,8 @@ class SchedulePage extends StatefulWidget {
   static const ROUTE = "schedule";
 
   const SchedulePage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   _SchedulePageState createState() => _SchedulePageState();

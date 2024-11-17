@@ -1,6 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart' show kIsWeb, defaultTargetPlatform;
 import 'package:fstapp/appConfig.dart';
 import 'package:fstapp/services/PlatformHelper.dart';
 import 'package:package_info_plus/package_info_plus.dart';

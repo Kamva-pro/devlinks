@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:cross_file/cross_file.dart';
 
 class DropFile extends StatefulWidget {
-  const DropFile({Key? key, required this.onFilePathChanged}) : super(key: key);
+  const DropFile({super.key, required this.onFilePathChanged});
 
   final void Function(XFile) onFilePathChanged;
   @override

@@ -87,7 +87,7 @@ class SideMenu extends StatefulWidget {
   final OrganizationModel? organization;
   final String currentMenu;
 
-  SideMenu({required this.onMenuItemSelected, required this.organization, required this.currentMenu});
+  const SideMenu({super.key, required this.onMenuItemSelected, required this.organization, required this.currentMenu});
 
   @override
   _SideMenuState createState() => _SideMenuState();

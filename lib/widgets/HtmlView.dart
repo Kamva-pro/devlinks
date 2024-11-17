@@ -6,8 +6,8 @@ import 'package:fstapp/appConfig.dart';
 import 'package:fstapp/themeConfig.dart';
 
 class HtmlWithAppLinksWidget extends HtmlWidget {
-  HtmlWithAppLinksWidget(this.context, super.html,
-      {required ColumnMode renderMode,
+  const HtmlWithAppLinksWidget(this.context, super.html,
+      {super.key, required ColumnMode renderMode,
         super.textStyle,
         super.customStylesBuilder});
 
@@ -42,11 +42,11 @@ class HtmlView extends StatefulWidget {
   Color? color;
 
   HtmlView({
-    Key? key,
+    super.key,
     required this.html,
     this.fontSize = 18,
     this.isSelectable = false,
-  }) : super(key: key);
+  });
 
   @override
   _HtmlViewState createState() => _HtmlViewState();

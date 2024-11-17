@@ -8,7 +8,7 @@ import 'package:fstapp/dataServices/DbEvents.dart';
 import 'package:pluto_grid_plus/pluto_grid_plus.dart';
 
 class ExclusivityTab extends StatefulWidget {
-  const ExclusivityTab({Key? key}) : super(key: key);
+  const ExclusivityTab({super.key});
 
   @override
   _ExclusivityTabState createState() => _ExclusivityTabState();

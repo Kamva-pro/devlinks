@@ -295,8 +295,9 @@ class OccasionUserModel extends IPlutoRowModel {
 
     for (String serviceType in serviceTypes) {
       // Check if both JSON objects contain the current service type key
-      if (!(json1.containsKey(serviceType) && json2.containsKey(serviceType)))
+      if (!(json1.containsKey(serviceType) && json2.containsKey(serviceType))) {
         return false;
+      }
 
       Map<String, dynamic> service1 = json1[serviceType];
       Map<String, dynamic> service2 = json2[serviceType];
@@ -315,8 +316,9 @@ class OccasionUserModel extends IPlutoRowModel {
 
       // Check for any extra keys in json2 that are not in json1
       for (var key in service2.keys.where((k)=>k.isNotEmpty)) {
-        if (!service1.containsKey(key))
+        if (!service1.containsKey(key)) {
           return false;
+        }
       }
     }
 

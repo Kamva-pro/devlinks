@@ -18,7 +18,7 @@ import 'package:fstapp/widgets/PasswordField.dart';
 @RoutePage()
 class LoginPage extends StatefulWidget {
   static const ROUTE = "login";
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   _LoginPageState createState() => _LoginPageState();

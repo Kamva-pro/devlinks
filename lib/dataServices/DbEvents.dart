@@ -373,7 +373,7 @@ class DbEvents {
         }
         else{
           var trPrefix = participant.getGenderPrefix();
-          ToastHelper.Show(context, "${trPrefix}{user} has been signed in.".tr(namedArgs: {"user":participant.toString()}));
+          ToastHelper.Show(context, "$trPrefix{user} has been signed in.".tr(namedArgs: {"user":participant.toString()}));
         }
         return;
       }
@@ -390,7 +390,7 @@ class DbEvents {
         }
         else{
           var trPrefix = participant.getGenderPrefix();
-          var message = "${trPrefix}{user} is already signed in at an event of this type.".tr(namedArgs: {"user":participant.toString()});
+          var message = "$trPrefix{user} is already signed in at an event of this type.".tr(namedArgs: {"user":participant.toString()});
           ToastHelper.Show(context, "${"Cannot sign in!".tr()} $message", severity: ToastSeverity.NotOk);
         }
         return;
@@ -403,7 +403,7 @@ class DbEvents {
         }
         else {
           var trPrefix = participant.getGenderPrefix();
-          var message = "${trPrefix}{user} is already signed in.".tr(namedArgs: {"user":participant.toString()});
+          var message = "$trPrefix{user} is already signed in.".tr(namedArgs: {"user":participant.toString()});
           ToastHelper.Show(context, "${"Cannot sign in!".tr()} $message", severity: ToastSeverity.NotOk);
         }
         return;
@@ -416,7 +416,7 @@ class DbEvents {
         }
         else{
           var trPrefix = participant.getGenderPrefix();
-          ToastHelper.Show(context, "${trPrefix}{user} is already signed in at another event at the same time.".tr(namedArgs: {"user":participant.toString()}));
+          ToastHelper.Show(context, "$trPrefix{user} is already signed in at another event at the same time.".tr(namedArgs: {"user":participant.toString()}));
         }
         return;
       }
@@ -711,7 +711,7 @@ class DbEvents {
           var trPrefix = participant.getGenderPrefix();
           if(context!=null) {
             ToastHelper.Show(context,
-                "${trPrefix}{user} has been signed out.".tr(
+                "$trPrefix{user} has been signed out.".tr(
                     namedArgs: {"user": participant.toString()}));
           }
         }

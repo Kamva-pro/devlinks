@@ -16,7 +16,7 @@ import 'package:fstapp/pages/HtmlEditorPage.dart';
 import 'package:pluto_grid_plus/pluto_grid_plus.dart';
 
 class EventsTab extends StatefulWidget {
-  const EventsTab({Key? key}) : super(key: key);
+  const EventsTab({super.key});
 
   @override
   _EventsTabState createState() => _EventsTabState();

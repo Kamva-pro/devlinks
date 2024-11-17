@@ -16,7 +16,7 @@ class AdministrationHeader<T extends IPlutoRowModel> extends StatefulWidget {
   final List<DataGridAction>? headerChildren;
   final DataGridActionsController? saveExtended;
 
-  const AdministrationHeader({required this.stateManager, Key? key, required this.fromPlutoJson, required this.loadData, this.headerChildren, this.saveExtended, required this.dataGrid}) : super(key: key);
+  const AdministrationHeader({required this.stateManager, super.key, required this.fromPlutoJson, required this.loadData, this.headerChildren, this.saveExtended, required this.dataGrid});
 
   final T Function(Map<String, dynamic>) fromPlutoJson;
   final Future<void> Function() loadData;

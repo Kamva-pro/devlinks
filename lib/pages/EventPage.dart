@@ -156,10 +156,10 @@ class _EventPageState extends State<EventPage> {
                                                 await DbUsers
                                                     .getAllUsersBasics();
                                             _queriedParticipants
-                                                .forEach((q) => {
+                                                .forEach((q) {
                                                       if (_participants.any(
                                                           (p) => p.id == q.id))
-                                                        {q.isSignedIn = true}
+                                                        {q.isSignedIn = true};
                                                     });
 
                                             // ignore: use_build_context_synchronously

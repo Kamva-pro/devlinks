@@ -19,7 +19,7 @@ import 'HtmlEditorPage.dart';
 @RoutePage()
 class NewsPage extends StatefulWidget {
   static const ROUTE = "news";
-  const NewsPage({Key? key}) : super(key: key);
+  const NewsPage({super.key});
   @override
   _NewsPageState createState() => _NewsPageState();
 }

@@ -14,7 +14,7 @@ import 'package:fstapp/pages/AdministrationOccasion/UsersTab.dart';
 @RoutePage()
 class AdminPage extends StatefulWidget {
   static const ROUTE = "admin";
-  const AdminPage({Key? key}) : super(key: key);
+  const AdminPage({super.key});
 
   @override
   _AdminPageState createState() => _AdminPageState();

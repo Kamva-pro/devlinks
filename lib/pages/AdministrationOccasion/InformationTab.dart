@@ -5,7 +5,7 @@ import 'package:fstapp/pages/AdministrationOccasion/SongbookContent.dart';
 import 'package:fstapp/themeConfig.dart';
 
 class InformationTab extends StatefulWidget {
-  const InformationTab({Key? key}) : super(key: key);
+  const InformationTab({super.key});
 
   @override
   _InformationTabState createState() => _InformationTabState();

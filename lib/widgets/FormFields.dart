@@ -14,6 +14,7 @@ class FormFields{
         if (value!.isEmpty || !value.contains('@')) {
           return "E-mail is not valid!".tr();
         }
+        return null;
       },
     );
   }

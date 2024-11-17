@@ -14,12 +14,12 @@ import '../widgets/DropFile.dart';
 
 class DialogHelper{
 
-  static void chooseUser(BuildContext context, void onPressedAction(UserInfoModel), List<UserInfoModel> _allUsers, String setText) {
+  static void chooseUser(BuildContext context, void onPressedAction(UserInfoModel), List<UserInfoModel> allUsers, String setText) {
     showSearch(
         context: context,
         delegate: SearchPage<UserInfoModel>(
           showItemsOnEmpty: true,
-          items: _allUsers,
+          items: allUsers,
           searchLabel: "Search participants".tr(),
           suggestion: Center(
             child: const Text(
@@ -190,7 +190,7 @@ class DialogHelper{
       [String confirmButtonMessage = "Ok",
       String cancelButtonMessage = "Storno"]
       ) async {
-    final TextEditingController _messageController = TextEditingController();
+    final TextEditingController messageController = TextEditingController();
     String? result;
     await showDialog(
       context: context,
@@ -201,7 +201,7 @@ class DialogHelper{
             child: Column(
               children: [
                 TextField(
-                  controller: _messageController,
+                  controller: messageController,
                   obscureText: true,
                   decoration: InputDecoration(hintText: hint),
                   onChanged: (str){ result = str;},
@@ -216,8 +216,8 @@ class DialogHelper{
             ),
             TextButton(
               onPressed: () async {
-                result = _messageController.text;
-                _messageController.clear();
+                result = messageController.text;
+                messageController.clear();
                 Navigator.pop(context);
               },
               child: Text(confirmButtonMessage),

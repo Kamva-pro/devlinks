@@ -13,7 +13,7 @@ import 'package:fstapp/pages/AdministrationOccasion/ColumnHelper.dart';
 import 'package:fstapp/widgets/ServiceDialog.dart';
 
 class ServiceTab extends StatefulWidget {
-  const ServiceTab({Key? key}) : super(key: key);
+  const ServiceTab({super.key});
 
   @override
   _ServiceTabState createState() => _ServiceTabState();
